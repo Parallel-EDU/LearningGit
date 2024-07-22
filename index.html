@@ -6,6 +6,7 @@
     <title>MERN Stack</title>
   </head>
   <body>
+    <a href="#list">List</a>
     <h1>This is a H1 tag</h1>
     <h2>This is a H2 tag</h2>
     <h3>This is a H3 tag</h3>
@@ -22,13 +23,267 @@
       <a href="./about.html">About page</a>
     </div>
     <div>
-        <a href="mailto:hello@paralleledu.com">Send Mail</a>
+      <a href="mailto:hello@paralleledu.com">Send Mail</a>
     </div>
     <div>
-        <a href="tel:+91 1234567890">Call us</a>
+      <a href="tel:+91 1234567890">Call us</a>
     </div>
     <div>
-        <a target="_blank" href="https://www.wikipedia.org/">Open in new tab</a>
+      <a target="_blank" href="https://www.wikipedia.org/">Open in new tab</a>
+    </div>
+    <div id="list">
+      <h1>Lists</h1>
+      <!-- <li></li> list items -->
+      <!-- <ul></ul> unordered list -->
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+      </ul>
+      <ul type="none">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+      </ul>
+      <ul type="circle">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+      </ul>
+      <ul type="square">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+      </ul>
+      <ul type="disc">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+      </ul>
+      <!-- <ol></ol> ordered list -->
+      <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+      </ol>
+      <ol type="A">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+      </ol>
+      <ol type="a">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+      </ol>
+      <ol type="I">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+      </ol>
+      <ol type="i">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+      </ol>
+      <ol type="1" start="500" reversed>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+      </ol>
+    </div>
+    <div>
+      <img
+        src="./assets/cat-image.jpg"
+        width="500px"
+        height="auto"
+        alt="This is a cat"
+      />
+      <img
+        src="https://cdn.theatlantic.com/thumbor/viW9N1IQLbCrJ0HMtPRvXPXShkU=/0x131:2555x1568/976x549/media/img/mt/2017/06/shutterstock_319985324/original.jpg"
+        width="500px"
+        height="auto"
+        alt="This is a cat"
+      />
+    </div>
+    <div>
+      <h1>Tables</h1>
+      <!-- <table></table> create table -->
+      <table border="1">
+        <thead>
+          <tr>
+            <th colspan="2">Name</th>
+            <th rowspan="2">Age</th>
+            <th rowspan="2">Country</th>
+            <th rowspan="2">Role</th>
+            <th rowspan="2">Runs</th>
+          </tr>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Virat</td>
+            <td>Kohli</td>
+            <td>35</td>
+            <td>India</td>
+            <td rowspan="3">Batsman</td>
+            <td>13,848</td>
+          </tr>
+          <tr>
+            <td>Ab</td>
+            <td>de villiers</td>
+            <td>37</td>
+            <td>South Africa</td>
+            <td>9,577</td>
+          </tr>
+          <tr>
+            <td>Steven</td>
+            <td>Smith</td>
+            <td>34</td>
+            <td>Australia</td>
+            <td>5,446</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <td colspan="5">Total Runs:</td>
+          <td>28,871</td>
+        </tfoot>
+      </table>
+    </div>
+    <div>
+      <h1>Forms</h1>
+
+      <form action="" method="post">
+        <input
+          type="text"
+          minlength="8"
+          maxlength="12"
+          placeholder="Enter your name"
+        />
+        <!-- <input type="button" value="Login" /> -->
+        <div>
+          <input type="checkbox" name="HTML" id="HTML" />
+          <label for="HTML">HTML</label>
+        </div>
+        <div>
+          <input type="checkbox" name="CSS" id="CSS" />
+          <label for="CSS">CSS</label>
+        </div>
+        <div>
+          <input type="checkbox" name="JS" id="JS" />
+          <label for="JS">JS</label>
+        </div>
+        <div>
+          <input type="color" name="" id="" />
+        </div>
+        <div>
+          <label for="">DOB</label>
+          <input type="date" name="" id="" />
+        </div>
+        <div>
+          <input
+            type="datetime"
+            placeholder="Enter your Date-Time"
+            name=""
+            id=""
+          />
+        </div>
+        <div>
+          <input type="datetime-local" name="" id="" />
+        </div>
+        <div>
+          <input type="email" placeholder="Enter your Email" name="" id="" />
+        </div>
+        <div>
+          <input type="file" name="" id="" />
+        </div>
+        <div>
+          <input type="month" name="" id="" />
+        </div>
+        <div>
+          <input
+            type="number"
+            name=""
+            placeholder="Enter your Age"
+            max="45"
+            min="30"
+            id=""
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            required
+            pattern="[0-9]{1,1}[a-z]{5,8}{A-Z}+"
+            maxlength="16"
+            name=""
+            id=""
+          />
+        </div>
+        <input type="radio" name="Course" id="HTML5" />
+        <label for="HTML5">HTML5</label>
+        <input type="radio" name="Course" id="CSS3" />
+        <label for="CSS3">CSS3</label>
+        <input type="radio" name="Course" id="JavaScript" />
+        <label for="JavaScript">JavaScript</label>
+        <div>
+          <input type="submit" name="" id="" />
+          <input type="search" name="" id="" />
+          <input type="reset" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          disabled
+          placeholder="Enter your message"
+        ></textarea>
+        <div>
+          <label for="skill">Select : </label>
+          <select name="skill" id="skill">
+            <option value="">Select a Skill</option>
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+            <option value="">JS</option>
+          </select>
+        </div>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button disabled>Disabled Button</button>
+      </form>
+    </div>
+    <div>
+      <h1>Semantic Tags</h1>
+      <header>
+        <img src="" alt="">
+        <nav>
+          <ul>
+            <li>
+              <a href=""></a>
+            </li>
+            <li>
+              <a href=""></a>
+            </li>
+            <li>
+              <a href=""></a>
+            </li>
+            <li>
+              <a href=""></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <main></main>
+      <section></section>
+      <aside></aside>
+      <article></article>
+      <footer></footer>
+    </div>
+    <div>
+      <iframe src="https://www.wikipedia.com/" frameborder="0" width="100%" height="1500px"></iframe>
     </div>
   </body>
 </html>
