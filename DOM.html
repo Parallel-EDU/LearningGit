@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM manipulation</title>
+    <style>
+      .color {
+        color: red;
+        font-size: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="heading"></div>
+    <p class="intro">This is a para</p>
+    <p class="intro">This is a para</p>
+    <p class="para">This is a para</p>
+    <section id="section">
+      <div id="sectionDiv"></div>
+    </section>
+    <button onclick="alert('Click Event')">Click Me</button>
+    <button ondblclick="alert('Double Click Event')">Double Click Me</button>
+    <button onmouseenter="alert('Mouse Enter Event')">Mouse Enter</button>
+    <button onmouseleave="alert('Mouse leave Event')">Mouse Leave</button>
+    <button onclick="onClick()">Click Me To Change Section</button>
+    <input type="text" onchange="onChange(event)">
+    <script src="./script/DOM.js"></script>
+  </body>
+</html>

@@ -3,23 +3,78 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  /* overflow-x: hidden; */
+}
 .box {
-    width: 100px;
-    height: 100px;
-    background-color: #fff;
-    box-shadow: 0px 0px 100px black;
-    padding: 10px;
-    position: relative;
-    animation-name: move;
-    animation-duration: 3s;
+  width: 200px;
+  height: 100px;
+  background-color: #fff;
+  box-shadow: 0px 0px 100px black;
+  padding: 10px;
+  position: relative;
+  /* animation-name: move;
+    animation-duration: 1s;
+    animation-timing-function:ease-in-out; */
+  /* animation-delay: 5s; */
+  /* animation-fill-mode:forwards; */
+  /* animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-play-state: running; */
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* animation: move 3s infinite; */
+}
+/* .box-2 {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: gold;
+  position: absolute;
+  top: -200px;
+  right: -200px;
+  animation: bright 2s infinite alternate;
+} */
+.overflow{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    overflow-x: scroll;
+}
+.overflow::-webkit-scrollbar{
+    display: none;
+}
+.container {
+  width: 300px;
+  height: 400px;
+  box-shadow: 0px 0px 20px black;
+  border-radius: 30px;
+}
+.main-container{
+    display: flex;
+    gap: 80px;
+    width: 3200px;
+}
+.box:hover {
+  animation-play-state: paused;
 }
 @keyframes move {
-    0%{
-        left: 0px;
-        top: 0;
-    }    
-    100%{
-        left: 300px;
-        top: 300px;
-    }
+  0% {
+    left: 0px;
+    top: 0;
+  }
+  /* 25%{
+        left: 500px;
+        top: 500px;
+    }    */
+  100% {
+    left: 300px;
+    top: 300px;
+  }
+}
+@keyframes bright {
+  0% {
+    box-shadow: 0px 0px 0px gold;
+  }
+  100% {
+    box-shadow: -50px 50px 100px rgba(255, 217, 0, 0.321);
+  }
 }
